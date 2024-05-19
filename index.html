@@ -17,19 +17,40 @@
 
     <!-- tampilan awal -->
     <div style="height: 200; background-color: #FFFFFF;">
-        <table>
+        <table class="padding-left">
             <tr>
                 <td>
-                    <!-- ini untuk form login -->
-                    <button>Submit</button>
+                    <div>
+                        <h2>diPELAJARin</2>
+                        <p>Gabung bersama kami <br>untuk dapatkan pengalaman <br>menarik dengan materi terbaru!</p>
+                        <!-- area kiri -->
+                        <a href="./Halaman Isi/masuk.html">
+                            <button>Join Us</button>
+                        </a>
+                    </div>
                 </td>
-                <td class="text-center">
-                    <img src="./public/asset/Mobile testing-pana (2).png" alt="icon" srcset="" style="width: 400px; height: 400px;">
+                <td>
+                    <div class="padding-left">
+                        <!-- area kanan -->
+                        <img src="./public/asset/Mobile testing-pana (2).png" alt="icon" style="width: 500px; height: 400px ;" class="img-icon">
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
 
+    <!-- manipulasi date-time js -->
+    <section>
+        <div id="date-time" class="text-center">
+            <script>
+                document.getElementById("date-time").innerHTML=Date();
+            </script>
+        </div>
+        
+    </section>
+
+    <!-- card berisi materi dibuat dengan menggunakan tabel-->
+    <!-- yang bisa digunakan hanya IPA -->
     <section id="content">
         <h2 class="text-center">Masih ragu? Yuk coba gratis!</h2>
         <table>
@@ -117,4 +138,20 @@
         </table>
     </section>
 </body>
+<footer>
+    <!-- menampilkan pembuat -->
+    <table style="width: 100%; height: 100%; background-color: grey;">
+        <tr>
+            <td>
+                <h4 class="rm_margin">Nida Gina Iswardhani</h4>
+                <p class="rm_margin">Project Kelas Online Front End Web Developer</p>
+            </td>
+            <td class="padding-left">
+                <textarea name="pesan_wa" id="pesan" placeholder="Tuliskan pesan untuk Nida" rows="4" cols="50" required></textarea>
+                <br>
+                <button>Send</button>
+            </td>
+        </tr>
+    </table>
+</footer>
 </html>
